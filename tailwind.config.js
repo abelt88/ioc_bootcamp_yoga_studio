@@ -7,7 +7,12 @@ module.exports = {
     './*.{html,js,md}'
   ],
   theme: {
-    extend: {},
-  },
+    extend: {
+      colors: {
+        rust: '#C97324',
+        cream: '#FBF2E9',
+    },
+    },
+},
   plugins: [],
 }

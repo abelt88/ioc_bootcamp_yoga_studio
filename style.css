@@ -9,3 +9,22 @@
 @tailwind utilities;
 
 /* Custom CSS */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oranienbaum", serif;
+}
+
+header nav {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.subtitle {
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+}

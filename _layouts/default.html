@@ -7,10 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <title>{{page.title}}</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    {{content}}
+<body class="bg-cream text-rust">
+    <header class="relative min-h-screen flex flex-col border-rust border-b">
+        <img class="absolute inset-y-0 right-0 {% if page.banner.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full object-cover" src="{{page.banner.image}}" alt="{{page.banner.image-alt-text}}">
+        <div class="relative flex flex-col justify-between">
+            <a href="/index.html" class="">The Yoga Studio</a>
+            <nav class="gap-3">
+                <a href="#" class="">Our Classes</a>
+                <a href="#" class="">Schedule</a>
+                <a href="#" class="">Contact</a>
+            </nav>
+        </div>
+        <div class="relative">
+            <hr class="border-rust">
+            <h5 class="subtitle">{{page.banner.subtitle}}</h5>
+            <h1 class="">{{page.banner.main-heading}}</h1>
+        </div>
+
+    </header>
+
+
+    {% for block in page.blocks %}
+
+    {% include /blocks/{{block.id}}.html %}
+
+    {% endfor %}
+
+    <!-- {{content}} -->
 </body>
 
 </html>
