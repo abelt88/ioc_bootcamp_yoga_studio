@@ -1,0 +1,31 @@
+footer-navs:
+  - heading: Lorem Ipsum
+    links:
+      - link-text: Dolor Sit Amet
+        link: /index.html
+      - link-text: Consecteur
+        link: /index.html
+      - link-text: Adipiscing Elit
+        link: /index.html
+      - link-text: Sed Do
+        link: /index.html
+  - heading: Lorem Ipsum
+    links:
+      - link-text: Dolor Sit Amet
+        link: /index.html
+      - link-text: Consecteur
+        link: /index.html
+      - link-text: Adipiscing Elit
+        link: /index.html
+      - link-text: Sed Do
+        link: /index.html
+  - heading: Lorem Ipsum
+    links:
+      - link-text: Dolor Sit Amet
+        link: /index.html
+      - link-text: Consecteur
+        link: /index.html
+      - link-text: Adipiscing Elit
+        link: /index.html
+      - link-text: Sed Do
+        link: /index.html

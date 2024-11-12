@@ -18,9 +18,9 @@
 <body class="bg-cream text-rust">
     <header class="relative min-h-screen flex flex-col border-rust border-b">
         <img class="absolute inset-y-0 right-0 {% if page.banner.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full object-cover" src="{{page.banner.image}}" alt="{{page.banner.image-alt-text}}">
-        <div class="relative flex flex-col justify-between">
+        <div class="relative flex flex-col md:flex-row md:justify-between items-center">
             <a href="/index.html" class="">The Yoga Studio</a>
-            <nav class="gap-3">
+            <nav class="flex gap-3">
                 <a href="#" class="">Our Classes</a>
                 <a href="#" class="">Schedule</a>
                 <a href="#" class="">Contact</a>
@@ -29,7 +29,7 @@
         <div class="relative">
             <hr class="border-rust">
             <h5 class="subtitle">{{page.banner.subtitle}}</h5>
-            <h1 class="">{{page.banner.main-heading}}</h1>
+            <h1 class="text-8xl -tracking-[5%]">{{page.banner.main-heading}}</h1>
         </div>
 
     </header>
@@ -42,6 +42,37 @@
     {% endfor %}
 
     <!-- {{content}} -->
+
+    <footer class="bg-rust text-cream">
+        <div class="flex justify-between px-6 py-10 uppercase text-sm">
+        <div class="flex gap-6">
+            {% for item in site.data.footer.footer-navs %}
+          <div>
+            <h3 class="">{{item.heading}}</h3>
+            <ul class="font-light space-y-1">
+                {% for link in item.links %}
+              <li class="w-36"><a href="{{link.link}}" class="hover:text-byellow hover:font-bold">{{link.link-text}}</a></li>
+             {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+        <div>
+          <p>Subscribe to our newsletter</p>
+          <form class="flex flex-col">
+            <label class="uppercase sr-only" for="_replyto"> Email </label>
+            <input class="border-2 border-orange-500 bg-orange-500 focus:border-focus outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30" type="email" name="_replyto" id="_replyto" placeholder="Email" />
+            <div class="text-right">
+                <button class="bg-black text-white px-5 py-1 text-sm uppercase hover:bg-focus hover:text-white my-4" type="submit">Subscribe</button>
+            </div>
+            </form> 
+          
+        </div>
+        </div>
+        <hr class="">
+        <span class="">Terms of Use</span>
+      </footer>
+
 </body>
 
 </html>
