@@ -39,15 +39,19 @@
 
 
     {% for block in page.blocks %}
+
+        <!-- Flexibiity of using 1 block and linking back to site.data instead of page block -->
         {% if block.type == 'classes' %}
             {% assign items = site.data.classes.classes %}
         {% elsif block.type == 'testimonials' %}
             {% assign items = site.data.testimonials.cards %}
+        <!-- keeping adding for as many types as you want -->
+         
         {% else %}
             {% assign items = block.items %}
         {% endif %}
 
-    {% include /blocks/{{block.id}}.html items=items %}
+        {% include /blocks/{{block.id}}.html items=items %}
 
     {% endfor %}
 

@@ -5,6 +5,7 @@
       <h2 class="px-10 text-4xl tracking-wide">{{block.heading}}</h2>
       {% endif %}
     
+      <!-- Add scrolling feature if more than 3 cards -->
       <div class="px-20 gap-5 {% if items.size > 3 %} md:flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %} no-scroll">
       {% for item in items %}
 
