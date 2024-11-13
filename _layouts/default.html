@@ -17,13 +17,13 @@
 
 <body class="bg-cream text-rust">
     <header class="relative min-h-screen flex flex-col border-rust border-b">
-        <img class="absolute inset-y-0 right-0 {% if page.banner.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full object-cover" src="{{page.banner.image}}" alt="{{page.banner.image-alt-text}}">
+        <img class="absolute inset-y-0 right-0 {% if page.banner.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full object-cover {% if page.banner.image-focus == 'top' %} object-top {% elsif page.banner.image-focus == 'bottom' %} object-bottom {% else %} object-center {% endif %}" src="{{page.banner.image}}" alt="{{page.banner.image-alt-text}}">
         <div class="relative flex flex-col md:flex-row md:justify-between items-center">
             <a href="/index.html" class="">The Yoga Studio</a>
             <nav class="flex gap-3">
-                <a href="#" class="">Our Classes</a>
-                <a href="#" class="">Schedule</a>
-                <a href="#" class="">Contact</a>
+                <a href="/our-classes.html" class="">Our Classes</a>
+                <a href="/schedule.html" class="">Schedule</a>
+                <a href="/contact.html" class="">Contact</a>
             </nav>
         </div>
         <div class="relative">
@@ -36,8 +36,15 @@
 
 
     {% for block in page.blocks %}
+        {% if block.type == 'classes' %}
+            {% assign items = site.data.classes.classes %}
+        {% elsif block.type == 'testimonials' %}
+            {% assign items = site.data.testimonials.cards %}
+        {% else %}
+            {% assign items = block.items %}
+        {% endif %}
 
-    {% include /blocks/{{block.id}}.html %}
+    {% include /blocks/{{block.id}}.html items=items %}
 
     {% endfor %}
 

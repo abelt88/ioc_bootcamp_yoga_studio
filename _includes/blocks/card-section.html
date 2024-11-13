@@ -2,8 +2,9 @@
     {% if block.heading %}
     <h2 class="text-3xl">{{block.heading}}</h2>
     {% endif %}
+    
     <div class="grid md:grid-cols-3 gap-5 ">
-      {% for item in block.cards %}
+      {% for item in items %}
 
       <div class="text-center {% if block.card-borders == true %} border-2 border-rust {% endif %} ">
         <img class="aspect-square w-full object-cover" src="{{item.image}}">
@@ -12,8 +13,9 @@
         <p class="py-4">{{item.info}}</p>
 
         {% if item.button-link and item.button-text %}
-        <a href="{{item.button-link}}" class="button">{{item.button-text}}</a>
-
+        <div>
+          <a href="{{item.button-link}}" class="button inline-block mb-3">{{item.button-text}}</a>
+        </div>
         {% endif %}
       </div>
 

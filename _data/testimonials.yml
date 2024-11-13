@@ -1,0 +1,16 @@
+cards:
+      - image: /images/jempinis-12 10.jpg
+        title: Duis Aute
+        info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
+        button-text: Sign Up
+        button-link: #
+      - image: /images/jempinis-12 11.jpg
+        title: Duis Aute
+        info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
+        button-text: Sign Up
+        button-link: #
+      - image: /images/jempinis-12 12.jpg
+        title: Duis Aute
+        info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
+        button-text: Sign Up
+        button-link: #
