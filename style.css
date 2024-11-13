@@ -26,7 +26,11 @@
     .button {
         @apply uppercase bg-rust text-cream py-2 px-5;
     }
+    a:hover {
+        @apply font-bold;
+    }
 }
+
 
 header nav a {
     text-transform: uppercase;

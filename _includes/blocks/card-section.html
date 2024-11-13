@@ -1,27 +1,27 @@
 <section class="container mx-auto p-8"> 
-    {% if block.heading %}
-    <h2 class="text-3xl">{{block.heading}}</h2>
-    {% endif %}
+    <div class="py-12">
+
+      {% if block.heading %}
+      <h2 class="text-4xl tracking-wide">{{block.heading}}</h2>
+      {% endif %}
     
-    <div class="grid md:grid-cols-3 gap-5 ">
+      <div class="grid md:grid-cols-3 gap-5 ">
       {% for item in items %}
 
-      <div class="text-center {% if block.card-borders == true %} border-2 border-rust {% endif %} ">
-        <img class="aspect-square w-full object-cover" src="{{item.image}}">
-        <h4 class="py-4">{{item.title}}</h4>
-        <hr class="border-rust">
-        <p class="py-4">{{item.info}}</p>
+        <div class="text-center {% if block.card-borders == true %} border-2 border-rust {% endif %} ">
+          <img class="aspect-square w-full object-cover" src="{{item.image}}">
+          <h4 class="py-4">{{item.title}}</h4>
+          <hr class="border-rust">
+          <p class="py-4">{{item.info}}</p>
 
-        {% if item.button-link and item.button-text %}
-        <div>
-          <a href="{{item.button-link}}" class="button inline-block mb-3">{{item.button-text}}</a>
+          {% if item.button-link and item.button-text %}
+          <div>
+            <a href="{{item.button-link}}" class="button inline-block mb-3">{{item.button-text}}</a>
+          </div>
+          {% endif %}
         </div>
-        {% endif %}
-      </div>
 
       {% endfor %}
-
+      </div>
     </div>
-  
-
 </section>
