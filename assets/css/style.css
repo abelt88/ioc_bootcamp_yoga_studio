@@ -441,7 +441,7 @@ body {
   font-family: Montserrat, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   font-family: Oranienbaum, serif;
 }
 p {
@@ -555,6 +555,9 @@ a:hover {
 .ml-56 {
   margin-left: 14rem;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
 .block {
   display: block;
 }
@@ -585,17 +588,11 @@ a:hover {
 .w-36 {
   width: 9rem;
 }
-.w-full {
-  width: 100%;
-}
-.w-44 {
-  width: 11rem;
-}
-.w-32 {
-  width: 8rem;
-}
 .w-52 {
   width: 13rem;
+}
+.w-full {
+  width: 100%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -603,11 +600,17 @@ a:hover {
 .max-w-\[40vh\] {
   max-width: 40vh;
 }
+.shrink-0 {
+  flex-shrink: 0;
+}
 .flex-grow {
   flex-grow: 1;
 }
 .grow {
   flex-grow: 1;
+}
+.basis-\[30\%\] {
+  flex-basis: 30%;
 }
 .resize-none {
   resize: none;
@@ -633,17 +636,14 @@ a:hover {
 .gap-10 {
   gap: 2.5rem;
 }
-.gap-3 {
-  gap: 0.75rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-5 {
   gap: 1.25rem;
 }
 .gap-6 {
   gap: 1.5rem;
-}
-.gap-2 {
-  gap: 0.5rem;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -666,6 +666,9 @@ a:hover {
 }
 .self-end {
   align-self: flex-end;
+}
+.overflow-x-auto {
+  overflow-x: auto;
 }
 .border {
   border-width: 1px;
@@ -698,6 +701,9 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
+.bg-gray-800\/20 {
+  background-color: rgb(31 41 55 / 0.2);
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -717,11 +723,20 @@ a:hover {
 .p-20 {
   padding: 5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
 .p-7 {
   padding: 1.75rem;
 }
-.p-8 {
-  padding: 2rem;
+.p-2 {
+  padding: 0.5rem;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -731,9 +746,17 @@ a:hover {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -755,6 +778,10 @@ a:hover {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -763,34 +790,21 @@ a:hover {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-\[20\%\] {
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 .pb-20 {
   padding-bottom: 5rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 .pb-\[20\%\] {
   padding-bottom: 20%;
 }
 .pt-4 {
   padding-top: 1rem;
-}
-.pb-8 {
-  padding-bottom: 2rem;
-}
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-.pt-10 {
-  padding-top: 2.5rem;
-}
-.pt-14 {
-  padding-top: 3.5rem;
 }
 .text-center {
   text-align: center;
@@ -804,9 +818,17 @@ a:hover {
 .font-sub {
   font-family: Poppins, serif;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-5xl {
   font-size: 3rem;
@@ -819,14 +841,6 @@ a:hover {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 .font-light {
   font-weight: 300;
@@ -941,6 +955,15 @@ header nav a {
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+  .md\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
   .md\:h-full {
     height: 100%;
   }

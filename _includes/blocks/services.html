@@ -1,17 +1,18 @@
 <section class="min-h-screen flex flex-col border-rust border-b">
   <div class="grid md:grid-cols-4 grow divide-x divide-y divide-rust">
-    <div class="relative h-80 md:h-full col-span-2 row-span-2 flex">
+    <div class="relative md:h-full col-span-2 row-span-2 flex">
       <img class="object-cover absolute top-0 left-0 w-full h-full object-top " src="{{block.image}}" alt="{{block.image-alt-text}}">
-      <div class="relative self-end px-[10%] pb-[20%] text-cream">
+      <div class="absolute top-0 left-0 w-full h-full bg-gray-800/20"></div>
+      <div class="relative self-end px-[10%] py-[20%] text-cream">
         <h2 class="text-5xl">{{block.heading}}</h2>
         <p class="pb-6">{{block.paragraph}}</p>
         <a href="{{block.link}}" class="button">{{block.link-text}}</a>
       </div>
     </div>
-      {% for item in block.grid %}
+      {% for item in items %}
     <div class="flex flex-col justify-end p-7 -my-px">
-      <h3 class="text-3xl">{{item.heading}}</h3>
-      <p class="">{{item.paragraph}}</p>
+      <h3 class="text-3xl">{{item.title}}</h3>
+      <p class="">{{item.info}}</p>
     </div>
       {% endfor %}
     </div>
