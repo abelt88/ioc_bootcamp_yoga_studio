@@ -11,8 +11,14 @@ module.exports = {
       colors: {
         rust: '#C97324',
         cream: '#FBF2E9',
+      },
+      fontFamily: {
+        body: ["Montserrat", "sans-serif"],
+        sub: ["Poppins", "serif"],
+        heading: ["Oranienbaum", "serif"],
+        
+      }
     },
-    },
-},
+  },
   plugins: [],
 }
