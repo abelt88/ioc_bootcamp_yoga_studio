@@ -1,0 +1,23 @@
+<section class="bg-rust min-h-screen flex flex-col border-rust border">
+  <div class="grid md:grid-cols-2 grow gap-0.5">
+    <div class="bg-cream ">
+      <h2 class="">{{block.heading}}</h2>
+      <p class="">{{block.paragraph}}</p>
+      <a href="{{block.link}}" class="button">{{block.link-text}}</a>
+    </div>
+    <div class="relative h-80 md:h-full">
+      {% if block.image-side == 'right' %}
+        <img class="object-cover absolute top-0 left-0 w-full h-full object-top" src="{{block.image}}" alt="{{block.image-alt-text}}">
+      
+
+      {% else %}
+
+        {% for item in block.grid %}
+        <h3 class=""></h3>
+        <p class=""></p>
+        {% endfor %}
+
+      {% endif %}
+    </div>
+  </div>
+</section>

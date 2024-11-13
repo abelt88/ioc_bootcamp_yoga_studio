@@ -486,8 +486,14 @@ video {
   top: 0px;
   bottom: 0px;
 }
+.left-0 {
+  left: 0px;
+}
 .right-0 {
   right: 0px;
+}
+.top-0 {
+  top: 0px;
 }
 .mx-auto {
   margin-left: auto;
@@ -509,6 +515,9 @@ video {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-80 {
+  height: 20rem;
+}
 .h-full {
   height: 100%;
 }
@@ -518,11 +527,14 @@ video {
 .w-3\/5 {
   width: 60%;
 }
+.w-36 {
+  width: 9rem;
+}
 .w-full {
   width: 100%;
 }
-.w-36 {
-  width: 9rem;
+.grow {
+  flex-grow: 1;
 }
 .flex-col {
   flex-direction: column;
@@ -533,14 +545,14 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.gap-5 {
-  gap: 1.25rem;
+.gap-0\.5 {
+  gap: 0.125rem;
 }
 .gap-3 {
   gap: 0.75rem;
 }
-.gap-10 {
-  gap: 2.5rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 .gap-6 {
   gap: 1.5rem;
@@ -550,11 +562,8 @@ video {
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
-.rounded-2xl {
-  border-radius: 1rem;
-}
-.rounded-full {
-  border-radius: 9999px;
+.border {
+  border-width: 1px;
 }
 .border-2 {
   border-width: 2px;
@@ -562,48 +571,44 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-rust {
+.border-cream {
   --tw-border-opacity: 1;
-  border-color: rgb(201 115 36 / var(--tw-border-opacity));
-}
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(251 242 233 / var(--tw-border-opacity));
 }
 .border-orange-500 {
   --tw-border-opacity: 1;
   border-color: rgb(249 115 22 / var(--tw-border-opacity));
 }
-.bg-cream {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
-}
-.bg-rust {
-  --tw-bg-opacity: 1;
-  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.border-rust {
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+.bg-cream {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+.bg-rust {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
 .p-8 {
   padding: 2rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -613,9 +618,9 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .py-1 {
   padding-top: 0.25rem;
@@ -625,9 +630,9 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .text-center {
   text-align: center;
@@ -638,21 +643,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-.text-\[100px\] {
-  font-size: 100px;
-}
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
 }
 .text-8xl {
   font-size: 6rem;
@@ -671,13 +661,13 @@ video {
 .-tracking-\[5\%\] {
   letter-spacing: -5%;
 }
-.text-rust {
-  --tw-text-opacity: 1;
-  color: rgb(201 115 36 / var(--tw-text-opacity));
-}
 .text-cream {
   --tw-text-opacity: 1;
   color: rgb(251 242 233 / var(--tw-text-opacity));
+}
+.text-rust {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -709,6 +699,13 @@ header nav {
     text-transform: uppercase;
 }
 
+.button {
+    background-color: #C97324;
+    color: #FBF2E9;
+    padding: 0.5rem 1.25rem;
+    text-transform: uppercase;
+}
+
 .placeholder\:text-white::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -737,6 +734,12 @@ header nav {
 }
 
 @media (min-width: 768px) {
+  .md\:h-full {
+    height: 100%;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

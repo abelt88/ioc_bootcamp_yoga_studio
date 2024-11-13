@@ -28,3 +28,10 @@ header nav {
     font-family: "Poppins", serif;
     text-transform: uppercase;
 }
+
+.button {
+    background-color: #C97324;
+    color: #FBF2E9;
+    padding: 0.5rem 1.25rem;
+    text-transform: uppercase;
+}
