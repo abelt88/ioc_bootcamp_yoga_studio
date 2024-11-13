@@ -495,6 +495,9 @@ video {
 .top-0 {
   top: 0px;
 }
+.order-first {
+  order: -9999;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -545,9 +548,6 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.gap-0\.5 {
-  gap: 0.125rem;
-}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -562,6 +562,9 @@ video {
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
+.self-end {
+  align-self: flex-end;
+}
 .border {
   border-width: 1px;
 }
@@ -571,29 +574,23 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-l {
+  border-left-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
+}
 .border-cream {
   --tw-border-opacity: 1;
   border-color: rgb(251 242 233 / var(--tw-border-opacity));
-}
-.border-orange-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 115 22 / var(--tw-border-opacity));
 }
 .border-rust {
   --tw-border-opacity: 1;
   border-color: rgb(201 115 36 / var(--tw-border-opacity));
 }
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
 .bg-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(251 242 233 / var(--tw-bg-opacity));
-}
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 .bg-rust {
   --tw-bg-opacity: 1;
@@ -622,6 +619,10 @@ video {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.px-\[7\%\] {
+  padding-left: 7%;
+  padding-right: 7%;
+}
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -633,6 +634,16 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.pb-\[15\%\] {
+  padding-bottom: 15%;
+}
+.pb-\[20\%\] {
+  padding-bottom: 20%;
 }
 .text-center {
   text-align: center;
@@ -652,6 +663,17 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.font-bold {
+  font-weight: 700;
+}
 .font-light {
   font-weight: 300;
 }
@@ -669,10 +691,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(201 115 36 / var(--tw-text-opacity));
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -686,6 +704,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Oranienbaum", serif;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;;
 }
 
 header nav {
