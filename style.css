@@ -26,6 +26,9 @@
     .button {
         @apply uppercase bg-rust text-cream py-2 px-5;
     }
+    .button:hover {
+        @apply text-cream bg-yellow-950 font-normal;
+    }
     a:hover {
         @apply font-bold;
     }

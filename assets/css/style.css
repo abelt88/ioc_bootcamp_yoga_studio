@@ -486,6 +486,13 @@ p {
   --tw-text-opacity: 1;
   color: rgb(251 242 233 / var(--tw-text-opacity));
 }
+.button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(66 32 6 / var(--tw-bg-opacity));
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(251 242 233 / var(--tw-text-opacity));
+}
 a:hover {
   font-weight: 700;
 }
@@ -947,14 +954,19 @@ header nav a {
   font-weight: 700;
 }
 
-.hover\:text-white:hover {
+.hover\:text-cream:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(251 242 233 / var(--tw-text-opacity));
 }
 
 .focus\:border-orange-400:focus {
   --tw-border-opacity: 1;
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
+}
+
+.focus\:border-yellow-950:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(66 32 6 / var(--tw-border-opacity));
 }
 
 @media (min-width: 768px) {
