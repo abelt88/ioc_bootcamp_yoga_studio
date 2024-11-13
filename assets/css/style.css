@@ -697,12 +697,12 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(251 242 233 / var(--tw-bg-opacity));
 }
+.bg-gray-800\/20 {
+  background-color: rgb(31 41 55 / 0.2);
+}
 .bg-rust {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
-}
-.bg-gray-800\/20 {
-  background-color: rgb(31 41 55 / 0.2);
 }
 .object-cover {
   -o-object-fit: cover;
@@ -720,23 +720,17 @@ a:hover {
   -o-object-position: top;
      object-position: top;
 }
+.p-2 {
+  padding: 0.5rem;
+}
 .p-20 {
   padding: 5rem;
 }
 .p-4 {
   padding: 1rem;
 }
-.p-6 {
-  padding: 1.5rem;
-}
 .p-7 {
   padding: 1.75rem;
-}
-.p-2 {
-  padding: 0.5rem;
-}
-.p-10 {
-  padding: 2.5rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -790,6 +784,10 @@ a:hover {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .py-\[20\%\] {
   padding-top: 20%;
   padding-bottom: 20%;
@@ -799,9 +797,6 @@ a:hover {
 }
 .pb-6 {
   padding-bottom: 1.5rem;
-}
-.pb-\[20\%\] {
-  padding-bottom: 20%;
 }
 .pt-4 {
   padding-top: 1rem;
@@ -881,6 +876,14 @@ header nav a {
     text-transform: uppercase;
 }
 
+.no-scroll {
+    scrollbar-width: none;
+}
+
+.no-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
 .placeholder\:font-sub::-moz-placeholder {
   font-family: Poppins, serif;
 }
@@ -958,9 +961,6 @@ header nav a {
   .md\:flex {
     display: flex;
   }
-  .md\:aspect-square {
-    aspect-ratio: 1 / 1;
-  }
   .md\:aspect-auto {
     aspect-ratio: auto;
   }
@@ -983,4 +983,3 @@ header nav a {
     justify-content: space-between;
   }
 }
-

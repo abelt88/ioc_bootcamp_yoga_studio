@@ -43,3 +43,10 @@ header nav a {
     text-transform: uppercase;
 }
 
+.no-scroll {
+    scrollbar-width: none;
+}
+
+.no-scroll::-webkit-scrollbar {
+    display: none;
+  }
