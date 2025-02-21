@@ -1,3 +1,4 @@
+  more-than-four-link: /our-classes.html
   classes:
       - image: /images/jempinis-12 13.jpg
         title: Bikram Hot Yoga
@@ -14,13 +15,13 @@
         info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
         button-text: Sign Up
         button-link: /schedule.html
-      - image: /images/jempinis-12 14.jpg
+      - image: /images/jempinis-12 2.jpg
         title: Vinyasa Flow
         info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
         button-text: Sign Up
         button-link: /schedule.html
-      - image: /images/jempinis-12 14.jpg
-        title: Vinyasa Flow
+      - image: /images/jempinis-12 15.jpg
+        title: Hatha Yoga
         info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
         button-text: Sign Up
         button-link: /schedule.html

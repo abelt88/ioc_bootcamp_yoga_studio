@@ -565,6 +565,9 @@ a:hover {
 .mt-4 {
   margin-top: 1rem;
 }
+.ml-32 {
+  margin-left: 8rem;
+}
 .block {
   display: block;
 }
@@ -808,6 +811,9 @@ a:hover {
 .pt-4 {
   padding-top: 1rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -993,5 +999,15 @@ header nav a {
   }
   .md\:justify-between {
     justify-content: space-between;
+  }
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:ml-56 {
+    margin-left: 14rem;
   }
 }

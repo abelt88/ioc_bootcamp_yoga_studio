@@ -16,8 +16,7 @@
       <div>
         {% if items.size >= 4 and forloop.index == 4 %}
 
-        <p>See more</p>
-
+        <a href="{{link}}" class="text-3xl font-heading pb-10">See more <i class="fas fa-chevron-right"></i></a>
         {% else %}
 
         <h3 class="text-3xl">{{item.title}}</h3>
