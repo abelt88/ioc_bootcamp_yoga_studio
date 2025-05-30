@@ -1,12 +1,20 @@
 <section class="min-h-screen flex flex-col border-rust border-b">
+
+  <!-- Create 2 column grid on div -->
   <div class="grid md:grid-cols-2 grow">
+
+    <!-- Text Side -->
     <div class=" self-end px-[10%] py-[20%]">
       <h2 class="text-5xl">{{block.heading}}</h2>
       <p class="pb-6">{{block.paragraph}}</p>
       <a href="{{block.link}}" class="button">{{block.link-text}}</a>
     </div>
+
+    <!-- Image side -->
     <div class="relative aspect-square md:aspect-auto md:h-full border-rust {% if block.image-side == 'left' %} order-first border-r {% else %} border-l {% endif %}">
         <img class="object-cover absolute top-0 left-0 w-full h-full object-top" src="{{block.image}}" alt="{{block.image-alt-text}}">
     </div>
+
   </div>
+
 </section>

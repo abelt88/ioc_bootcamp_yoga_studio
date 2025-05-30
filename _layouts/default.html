@@ -65,7 +65,7 @@
     {{content}}
 
     <footer class="bg-rust text-cream">
-        <div class="flex justify-between px-10 py-10 uppercase text-sm">
+        <div class="flex flex-col md:flex-row md:justify-between px-10 py-10 uppercase text-sm">
         <div class="flex gap-6">
             {% for item in site.data.footer.footer-navs %}
           <div>
@@ -82,7 +82,7 @@
           <p class="font-heading text-right">Subscribe to our newsletter</p>
           <form class="flex flex-col">
             <label class="uppercase sr-only" for="_replyto"> Email </label>
-            <input class="border-2 border-cream bg-rust focus:border-yellow-950 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30" type="email" name="_replyto" id="_replyto" placeholder="Email" />
+            <input class="border-2 border-cream bg-rust focus:border-yellow-950 focus:bg-yellow-950 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30" type="email" name="_replyto" id="_replyto" placeholder="Email" />
             <div class="text-right">
                 <button class="bg-cream text-rust px-5 py-1 text-sm uppercase hover:bg-yellow-950 hover:text-cream my-4" type="submit">Subscribe</button>
             </div>

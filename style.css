@@ -53,3 +53,55 @@ header nav a {
 .no-scroll::-webkit-scrollbar {
     display: none;
   }
+
+  /* Momence Plugin Styling - Schedule */
+
+    /* Put this outside of the tailwind components in the style.css */
+
+    /* Background */
+    #momence-embed #momence-plugin-host-schedule .momence-host-schedule {
+        @apply bg-cream;
+    }
+
+    /* Background */
+    #momence-embed #momence-plugin-host-schedule * {
+        @apply bg-cream text-rust font-body font-light rounded-none border-rust;
+    }
+
+    /* Styling the headings */
+    #momence-embed #momence-plugin-host-schedule h4 {
+        @apply text-rust font-serif;
+    }
+
+    /* Hide the class type test above the class title */
+    #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+        display:none;
+    }
+
+    /* Hide featured image */
+    #momence-embed #momence-plugin-host-schedule .jDJBAl, 
+    #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image {
+        display:none;
+    }
+
+    /* Teacher Name & Bio */
+    #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+        @apply inline-block px-6 py-2 uppercase tracking-wide bg-rust text-cream rounded-none whitespace-nowrap;
+    }
+
+    /* Remove the border from the arrows left and right at the top */
+    #momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+        @apply border-none;
+    }
+
+    /* Add more space below the first row */
+    #momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+        display:none;
+    }
+
+    /* Styling the lines under the list of pages */
+    #momence-embed #momence-plugin-host-schedule .gZ0yVg::after {
+        @apply bg-rust;
+    }
+
+/* End Momence Plugin Styling */

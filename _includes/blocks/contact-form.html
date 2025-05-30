@@ -1,18 +1,31 @@
 <section class="flex flex-col items-end p-20 gap-10"> 
-  <div>
-    <form class="max-w-2xl">
-  
-      <label class="uppercase pt-4 px-3 font-sub sr-only" for="_name"> Name </label>
-      <input class="w-full mb-8 border-b border-rust bg-cream focus:border-orange-400 outline-none py-1 px-3 placeholder:text-rust placeholder:font-sub placeholder:uppercase" type="text" name="_name" id="_name" placeholder="Name" />
-    
-      <label class="uppercase px-3 font-sub sr-only" for="_replyto"> Email </label>
-      <input class="w-full mb-8 border-b border-rust bg-cream focus:border-orange-400 outline-none py-1 px-3 placeholder:text-rust placeholder:font-sub placeholder:uppercase" type="email" name="_replyto" id="_replyto" placeholder="Email" />
-    
-      <label class="uppercase pt-4 px-3 font-sub" for="message"> Message </label>
-      <textarea class="w-full mb-2 border border-rust bg-cream  focus:border-orange-400 outline-none py-2 px-3 placeholder:text-rust placeholder:opacity-30 placeholder:text-sm resize-none" name="message" id="message" placeholder="Hey I want to learn to yoga..." rows="6"></textarea>
-    <div class="text-right">
-      <button class="button px-10 py-1 text-sm uppercase hover:bg-yellow-950" type="submit"> Send </button>
+
+  <div class="grid md:grid-cols-2 grow">
+
+    <!-- Form Intro -->
+    <div class="pr-12">
+      <h2 class="text-3xl">{{block.heading}}</h2>
+      <p class="">{{block.paragraph}}</p>
     </div>
-    </form> 
+
+    <!-- Contact Form -->
+    <div>
+      <form class="max-w-2xl">
+    
+        <label class="uppercase pt-4 px-3 font-subn sr-only" for="_name"> Name </label>
+        <input class="w-full mb-8 border-b border-rust bg-cream focus:border-orange-400 outline-none py-1 px-3 placeholder:text-rust placeholder:font-sub placeholder:uppercase" type="text" name="_name" id="_name" placeholder="Name" />
+      
+        <label class="uppercase px-3 font-sub sr-only" for="_replyto"> Email </label>
+        <input class="w-full mb-8 border-b border-rust bg-cream focus:border-orange-400 outline-none py-1 px-3 placeholder:text-rust placeholder:font-sub placeholder:uppercase" type="email" name="_replyto" id="_replyto" placeholder="Email" />
+      
+        <label class="uppercase pt-4 px-3 font-sub" for="message"> Message </label>
+        <textarea class="w-full mb-2 border border-rust bg-cream  focus:border-orange-400 outline-none py-2 px-3 placeholder:text-rust placeholder:opacity-30 placeholder:text-sm resize-none" name="message" id="message" placeholder="Hey I want to learn to yoga..." rows="6"></textarea>
+      <div class="text-right">
+        <button class="button px-10 py-1 text-sm uppercase hover:bg-yellow-950" type="submit"> Send </button>
+      </div>
+      </form> 
+    </div>
+
   </div>
+
 </section>
