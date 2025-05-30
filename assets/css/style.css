@@ -559,14 +559,11 @@ a:hover {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.ml-56 {
-  margin-left: 14rem;
+.ml-32 {
+  margin-left: 8rem;
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.ml-32 {
-  margin-left: 8rem;
 }
 .block {
   display: block;
@@ -582,9 +579,6 @@ a:hover {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.h-80 {
-  height: 20rem;
 }
 .h-full {
   height: 100%;
@@ -802,6 +796,9 @@ a:hover {
   padding-top: 20%;
   padding-bottom: 20%;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -810,9 +807,6 @@ a:hover {
 }
 .pt-4 {
   padding-top: 1rem;
-}
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -999,10 +993,6 @@ header nav a {
   }
   .md\:justify-between {
     justify-content: space-between;
-  }
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 }
 
