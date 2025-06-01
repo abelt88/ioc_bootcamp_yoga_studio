@@ -447,34 +447,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-bottom: 1rem;
 }
-.container {
-  width: 100%;
-}
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
 .button {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
@@ -539,10 +511,6 @@ a:hover {
   margin-top: -1px;
   margin-bottom: -1px;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -559,23 +527,11 @@ a:hover {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.ml-32 {
-  margin-left: 8rem;
+.ml-12 {
+  margin-left: 3rem;
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
-}
-.ml-24 {
-  margin-left: 6rem;
-}
-.ml-16 {
-  margin-left: 4rem;
-}
-.ml-12 {
-  margin-left: 3rem;
 }
 .block {
   display: block;
@@ -645,9 +601,6 @@ a:hover {
 }
 .justify-center {
   justify-content: center;
-}
-.justify-between {
-  justify-content: space-between;
 }
 .gap-10 {
   gap: 2.5rem;
@@ -772,10 +725,6 @@ a:hover {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 .px-\[10\%\] {
   padding-left: 10%;
   padding-right: 10%;
@@ -808,10 +757,6 @@ a:hover {
   padding-top: 20%;
   padding-bottom: 20%;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -821,14 +766,11 @@ a:hover {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
-.pt-4 {
-  padding-top: 1rem;
-}
 .pr-12 {
   padding-right: 3rem;
 }
-.pb-16 {
-  padding-bottom: 4rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 .text-center {
   text-align: center;
@@ -856,10 +798,6 @@ a:hover {
 }
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-.text-8xl {
-  font-size: 6rem;
   line-height: 1;
 }
 .text-sm {
@@ -1102,9 +1040,6 @@ header nav a {
 @media (min-width: 1024px) {
   .lg\:ml-56 {
     margin-left: 14rem;
-  }
-  .lg\:pb-20 {
-    padding-bottom: 5rem;
   }
   .lg\:text-8xl {
     font-size: 6rem;
